@@ -4,27 +4,27 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
-      icon: '🎨',
-      skills: ['React', 'Vue.js', 'TypeScript', 'TailwindCSS', 'HTML5', 'CSS3', 'Next.js'],
+      title: 'Accounting',
+      icon: '📊',
+      skills: ['Financial Accounting', 'Cost Accounting', 'Taxation', 'Auditing', 'Financial Reporting', 'Budgeting'],
       color: 'from-maroon-500 to-gold-500',
     },
     {
-      title: 'Backend',
-      icon: '⚙️',
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+      title: 'Information Systems',
+      icon: '💻',
+      skills: ['Database Management', 'Accounting Software', 'Data Analysis', 'Spreadsheets', 'ERP Systems', 'Basic Programming'],
       color: 'from-maroon-600 to-gold-600',
     },
     {
-      title: 'Tools & DevOps',
+      title: 'Technical Skills',
       icon: '🛠️',
-      skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Jest', 'Webpack', 'Vite'],
+      skills: ['Microsoft Excel', 'Google Sheets', 'PowerPoint', 'Word Processing', 'Data Entry', 'Report Generation'],
       color: 'from-maroon-700 to-gold-700',
     },
     {
       title: 'Soft Skills',
       icon: '💡',
-      skills: ['Problem Solving', 'Team Collaboration', 'Communication', 'Agile/Scrum', 'Mentoring'],
+      skills: ['Attention to Detail', 'Analytical Thinking', 'Time Management', 'Communication', 'Teamwork', 'Problem Solving'],
       color: 'from-maroon-800 to-gold-500',
     },
   ]

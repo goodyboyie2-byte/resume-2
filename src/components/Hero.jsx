@@ -74,7 +74,7 @@ const Hero = () => {
         >
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-maroon-500 via-maroon-600 to-gold-500 p-1 shadow-2xl">
             <div className="w-full h-full rounded-full bg-maroon-900 flex items-center justify-center text-white text-6xl font-bold">
-              YN
+              RB
             </div>
           </div>
           <motion.div
@@ -95,7 +95,7 @@ const Hero = () => {
           className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6"
         >
           <span className="bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 bg-clip-text text-transparent">
-            Your Name
+            RICHARD PALIS BUDLONG
           </span>
         </motion.h1>
 
@@ -106,7 +106,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl sm:text-2xl text-gray-300 mb-4"
         >
-          Full Stack Developer
+          BS in Accounting Information System
         </motion.p>
 
         <motion.p
@@ -116,8 +116,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
         >
-          Crafting digital experiences that blend creativity with functionality. 
-          Turning complex problems into elegant solutions.
+          Aspiring Accountant / Detail-Oriented. Data Driven. Dependable.
         </motion.p>
 
         {/* Animated buttons */}

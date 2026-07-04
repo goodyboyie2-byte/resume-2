@@ -19,10 +19,10 @@ const About = () => {
   }
 
   const facts = [
-    { icon: Globe, label: 'Location', value: 'Your City, Country' },
-    { icon: Zap, label: 'Experience', value: 'X+ Years in Development' },
-    { icon: Code, label: 'Focus', value: 'Full-Stack Development' },
-    { icon: Heart, label: 'Passion', value: 'Building Great Products' },
+    { icon: Globe, label: 'Location', value: 'San Fernando, Pampanga' },
+    { icon: Zap, label: 'Education', value: 'BS in Accounting Information System' },
+    { icon: Code, label: 'Focus', value: 'Accounting & Information Systems' },
+    { icon: Heart, label: 'Passion', value: 'Data Analysis & Financial Management' },
   ]
 
   return (
@@ -52,18 +52,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with expertise in building modern web applications. 
-              With a strong foundation in both front-end and back-end technologies, I create seamless 
-              user experiences that are both beautiful and functional.
+              I am a graduating student pursuing a Bachelor of Science in Accounting Information System. 
+              I am passionate about combining accounting principles with information technology to create 
+              efficient financial systems and data-driven solutions.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              My journey in software development started with a curiosity about how things work on the web. 
-              Since then, I've worked on various projects, from small business websites to complex enterprise 
-              applications, always focusing on clean code and best practices.
+              My academic journey has equipped me with strong analytical skills, attention to detail, and 
+              a solid foundation in both accounting and information systems. I am eager to apply my knowledge 
+              in a professional setting and contribute to organizational success.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-              projects, or sharing knowledge with the developer community.
+              I am detail-oriented, data-driven, and dependable - qualities that I believe are essential 
+              for success in the accounting and finance field.
             </p>
           </motion.div>
 

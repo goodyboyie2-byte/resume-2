@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Github, Send } from 'lucide-react'
+import { Mail, Linkedin, Facebook, Phone, Send } from 'lucide-react'
 
 const Contact = () => {
   const containerVariants = {
@@ -22,23 +22,30 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      value: 'richard.p.budlong@gmail.com',
+      href: 'mailto:richard.p.budlong@gmail.com',
       color: 'from-maroon-500 to-gold-500',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'Connect with me',
-      href: 'https://linkedin.com/in/yourusername',
+      value: 'Richard Budlong',
+      href: 'https://linkedin.com/in/richard-budlong',
       color: 'from-maroon-600 to-gold-600',
     },
     {
-      icon: Github,
-      label: 'GitHub',
-      value: 'View my work',
-      href: 'https://github.com/yourusername',
+      icon: Facebook,
+      label: 'Facebook',
+      value: 'Richard Budlong',
+      href: 'https://facebook.com/richard.budlong',
       color: 'from-maroon-700 to-gold-700',
+    },
+    {
+      icon: Phone,
+      label: 'Phone',
+      value: '09266486033',
+      href: 'tel:09266486033',
+      color: 'from-maroon-800 to-gold-500',
     },
   ]
 
@@ -74,7 +81,7 @@ const Contact = () => {
           Whether you have a question or just want to say hi, feel free to reach out!
         </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {contacts.map((contact, index) => (
             <motion.a
               key={index}

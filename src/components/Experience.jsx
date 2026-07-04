@@ -1,44 +1,67 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Briefcase, Calendar, MapPin, ArrowRight } from 'lucide-react'
+import { GraduationCap, Calendar, Award, ArrowRight } from 'lucide-react'
 
 const Experience = () => {
-  const experiences = [
+  const education = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'Company Name',
-      location: 'City, Country',
-      period: '2022 - Present',
+      level: 'Tertiary Education',
+      degree: 'Bachelor of Science in Accounting Information System',
+      institution: 'Pampanga State University',
+      period: '2020 - Present',
       description: [
-        'Led development of microservices architecture serving 1M+ users',
-        'Mentored junior developers and conducted code reviews',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Optimized database queries improving performance by 40%',
+        'Specializing in accounting principles and information systems',
+        'Learning financial management and data analysis',
+        'Developing skills in accounting software and database management',
       ],
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Previous Company',
-      location: 'City, Country',
-      period: '2020 - 2022',
-      description: [
-        'Developed and maintained RESTful APIs using Node.js and Express',
-        'Built responsive front-end interfaces with React and TypeScript',
-        'Collaborated with design team to implement pixel-perfect UIs',
-        'Integrated third-party services including payment gateways and authentication',
-      ],
-    },
-    {
-      title: 'Junior Developer',
-      company: 'First Company',
-      location: 'City, Country',
+      level: 'Senior High School',
+      degree: 'Accountancy, Business and Management (ABM) Strand',
+      institution: 'Your Senior High School Name',
       period: '2018 - 2020',
       description: [
-        'Assisted in developing web applications using JavaScript frameworks',
-        'Participated in agile development processes and sprint planning',
-        'Wrote unit and integration tests ensuring code quality',
-        'Fixed bugs and implemented new features based on user feedback',
+        'Focused on business and accounting fundamentals',
+        'Developed analytical and problem-solving skills',
+        'Participated in business-related activities and projects',
       ],
+    },
+    {
+      level: 'Secondary Education',
+      degree: 'Junior High School',
+      institution: 'Your High School Name',
+      period: '2014 - 2018',
+      description: [
+        'Completed basic education with good academic standing',
+        'Active in school activities and organizations',
+        'Developed strong foundation in core subjects',
+      ],
+    },
+    {
+      level: 'Primary Education',
+      degree: 'Elementary',
+      institution: 'Your Elementary School Name',
+      period: '2008 - 2014',
+      description: [
+        'Completed primary education with honors',
+        'Developed basic literacy and numeracy skills',
+        'Active in co-curricular activities',
+      ],
+    },
+  ]
+
+  const achievements = [
+    {
+      title: 'Academic Excellence',
+      description: 'Consistently maintained good academic standing throughout college',
+    },
+    {
+      title: 'Leadership',
+      description: 'Active participation in student organizations and activities',
+    },
+    {
+      title: 'Technical Skills',
+      description: 'Proficient in accounting software and information systems',
     },
   ]
 
@@ -77,12 +100,12 @@ const Experience = () => {
           className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center"
         >
           <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-            Work Experience
+            Academic Background
           </span>
         </motion.h2>
 
-        <div className="space-y-6">
-          {experiences.map((exp, index) => (
+        <div className="space-y-6 mb-16">
+          {education.map((edu, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
@@ -93,25 +116,21 @@ const Experience = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="p-2 bg-gradient-to-br from-maroon-500 to-gold-500 rounded-lg">
-                      <Briefcase className="text-white w-5 h-5" />
+                      <GraduationCap className="text-white w-5 h-5" />
                     </div>
-                    <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
+                    <h3 className="text-xl font-semibold text-white">{edu.level}</h3>
                   </div>
-                  <p className="text-gold-400 font-medium ml-11">{exp.company}</p>
+                  <p className="text-gold-400 font-medium ml-11">{edu.degree}</p>
+                  <p className="text-gray-300 text-sm ml-11 mt-1">{edu.institution}</p>
                 </div>
                 <div className="flex items-center text-gray-400 mt-4 sm:mt-0 ml-11 sm:ml-0">
                   <Calendar size={16} className="mr-2" />
-                  <span className="text-sm">{exp.period}</span>
+                  <span className="text-sm">{edu.period}</span>
                 </div>
               </div>
 
-              <div className="flex items-center text-gray-400 mb-6 ml-11">
-                <MapPin size={16} className="mr-2" />
-                <span className="text-sm">{exp.location}</span>
-              </div>
-
               <ul className="space-y-3 ml-11">
-                {exp.description.map((item, idx) => (
+                {edu.description.map((item, idx) => (
                   <li key={idx} className="flex items-start text-gray-300">
                     <span className="text-gold-400 mr-3 mt-1">▹</span>
                     <span className="text-sm leading-relaxed">{item}</span>
@@ -126,6 +145,34 @@ const Experience = () => {
               >
                 <ArrowRight className="text-gold-400 w-5 h-5" />
               </motion.div>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.h2
+          variants={itemVariants}
+          className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center"
+        >
+          <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+            Achievements
+          </span>
+        </motion.h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {achievements.map((achievement, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 hover:border-gold-500/50 transition-all duration-300"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-gradient-to-br from-maroon-500 to-gold-500 rounded-xl">
+                  <Award className="text-white w-6 h-6" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">{achievement.title}</h3>
+              </div>
+              <p className="text-gray-300 text-sm leading-relaxed">{achievement.description}</p>
             </motion.div>
           ))}
         </div>
