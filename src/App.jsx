@@ -1,9 +1,20 @@
 import React from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">Portfolio Loading...</h1>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Contact />
     </div>
   )
 }
