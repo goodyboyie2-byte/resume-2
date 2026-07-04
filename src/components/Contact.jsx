@@ -24,30 +24,30 @@ const Contact = () => {
       label: 'Email',
       value: 'your.email@example.com',
       href: 'mailto:your.email@example.com',
-      color: 'from-purple-500 to-pink-500',
+      color: 'from-maroon-500 to-gold-500',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect with me',
       href: 'https://linkedin.com/in/yourusername',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-maroon-600 to-gold-600',
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'View my work',
       href: 'https://github.com/yourusername',
-      color: 'from-gray-500 to-gray-700',
+      color: 'from-maroon-700 to-gold-700',
     },
   ]
 
   return (
-    <section id="contact" className="py-20 bg-slate-900 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-maroon-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full filter blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-maroon-500/10 rounded-full filter blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-500/10 rounded-full filter blur-3xl" />
       </div>
 
       <motion.div
@@ -61,7 +61,7 @@ const Contact = () => {
           variants={itemVariants}
           className="text-4xl sm:text-5xl font-bold text-white mb-4 text-center"
         >
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
             Get In Touch
           </span>
         </motion.h2>
@@ -84,13 +84,13 @@ const Contact = () => {
               rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/50 transition-all duration-300 group"
+              className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 text-center hover:border-gold-500/50 transition-all duration-300 group"
             >
               <div className={`p-4 bg-gradient-to-br ${contact.color} rounded-2xl mx-auto mb-4 w-fit`}>
                 <contact.icon className="text-white w-6 h-6" />
               </div>
               <h3 className="font-semibold text-white mb-2">{contact.label}</h3>
-              <p className="text-gray-400 text-sm group-hover:text-purple-400 transition-colors">
+              <p className="text-gray-400 text-sm group-hover:text-gold-400 transition-colors">
                 {contact.value}
               </p>
             </motion.a>
@@ -112,7 +112,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-500"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-500"
                 placeholder="Your name"
               />
             </div>
@@ -123,7 +123,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-500"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent outline-none transition-all duration-200 text-white placeholder-gray-500"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -142,7 +142,7 @@ const Contact = () => {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-lg font-semibold shadow-lg shadow-purple-500/50 hover:shadow-purple-500/70 transition-all duration-200 flex items-center justify-center gap-2"
+              className="w-full bg-gradient-to-r from-maroon-500 to-gold-500 text-white py-3 rounded-lg font-semibold shadow-lg shadow-maroon-500/50 hover:shadow-maroon-500/70 transition-all duration-200 flex items-center justify-center gap-2"
             >
               <Send size={20} />
               Send Message

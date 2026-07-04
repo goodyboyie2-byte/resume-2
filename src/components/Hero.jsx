@@ -16,11 +16,11 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 pt-16">
+    <section id="home" className="min-h-screen relative overflow-hidden bg-gradient-to-br from-maroon-900 via-maroon-800 to-maroon-900 pt-16">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
+          className="absolute top-20 left-10 w-72 h-72 bg-maroon-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
           animate={{
             scale: [1, 1.2, 1],
             x: [0, 100, 0],
@@ -32,7 +32,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute top-40 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
+          className="absolute top-40 right-10 w-72 h-72 bg-gold-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
           animate={{
             scale: [1, 1.2, 1],
             x: [0, -100, 0],
@@ -44,7 +44,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
+          className="absolute bottom-20 left-1/2 w-96 h-96 bg-maroon-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"
           animate={{
             scale: [1, 1.3, 1],
             y: [0, 50, 0],
@@ -72,8 +72,8 @@ const Hero = () => {
           }}
           className="mb-12 relative"
         >
-          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-white text-6xl font-bold">
+          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-maroon-500 via-maroon-600 to-gold-500 p-1 shadow-2xl">
+            <div className="w-full h-full rounded-full bg-maroon-900 flex items-center justify-center text-white text-6xl font-bold">
               YN
             </div>
           </div>
@@ -82,7 +82,7 @@ const Hero = () => {
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           >
-            <Sparkles className="text-yellow-400 w-8 h-8" />
+            <Sparkles className="text-gold-400 w-8 h-8" />
           </motion.div>
         </motion.div>
 
@@ -94,7 +94,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6"
         >
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 bg-clip-text text-transparent">
             Your Name
           </span>
         </motion.h1>
@@ -132,7 +132,7 @@ const Hero = () => {
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/50"
+            className="px-8 py-4 rounded-full font-semibold bg-gradient-to-r from-maroon-500 to-gold-500 text-white shadow-lg shadow-maroon-500/50"
           >
             Get In Touch
           </motion.a>
@@ -140,7 +140,7 @@ const Hero = () => {
             href="#experience"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full font-semibold border-2 border-purple-500 text-purple-400 hover:bg-purple-500/10 transition-colors"
+            className="px-8 py-4 rounded-full font-semibold border-2 border-gold-500 text-gold-400 hover:bg-gold-500/10 transition-colors"
           >
             View Work
           </motion.a>
@@ -166,7 +166,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-gray-400 hover:text-purple-400 transition-colors"
+              className="text-gray-400 hover:text-gold-400 transition-colors"
             >
               <social.icon size={32} />
             </motion.a>

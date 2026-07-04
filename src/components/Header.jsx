@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-slate-900/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-maroon-900/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'
     }`}>
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -34,7 +34,7 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <a href="#home" className="text-2xl font-bold bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
               Portfolio
             </a>
           </motion.div>
@@ -48,10 +48,10 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.1 }}
-                className="text-gray-300 hover:text-purple-400 transition-colors duration-200 relative group"
+                className="text-gray-300 hover:text-gold-400 transition-colors duration-200 relative group"
               >
                 {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-gold-400 to-gold-600 transition-all duration-300 group-hover:w-full" />
               </motion.a>
             ))}
           </div>
@@ -64,7 +64,7 @@ const Header = () => {
           >
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-purple-400 transition-colors"
+              className="text-gray-300 hover:text-gold-400 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -87,7 +87,7 @@ const Header = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="block py-2 text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                  className="block py-2 text-gray-300 hover:text-gold-400 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

@@ -26,11 +26,11 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 bg-slate-900 relative overflow-hidden">
+    <section id="about" className="py-20 bg-maroon-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-maroon-500/10 rounded-full filter blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full filter blur-3xl" />
       </div>
 
       <motion.div
@@ -44,7 +44,7 @@ const About = () => {
           variants={itemVariants}
           className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center"
         >
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
             About Me
           </span>
         </motion.h2>
@@ -74,12 +74,12 @@ const About = () => {
                 whileHover={{ scale: 1.02, x: 10 }}
                 className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6 flex items-center gap-4"
               >
-                <div className="p-3 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg">
+                <div className="p-3 bg-gradient-to-br from-maroon-500 to-gold-500 rounded-lg">
                   <fact.icon className="text-white w-6 h-6" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">{fact.label}</p>
-                  <p className="text-white font-semibold">{fact.value}</p>
+                  <p className="text-gold-400 font-semibold">{fact.value}</p>
                 </div>
               </motion.div>
             ))}
