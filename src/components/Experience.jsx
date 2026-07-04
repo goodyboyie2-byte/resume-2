@@ -8,7 +8,7 @@ const Experience = () => {
       level: 'Tertiary Education',
       degree: 'Bachelor of Science in Accounting Information System',
       institution: 'Pampanga State University',
-      period: '2020 - Present',
+      period: '2024 - Present',
       description: [
         'Specializing in accounting principles and information systems',
         'Learning financial management and data analysis',
@@ -16,21 +16,32 @@ const Experience = () => {
       ],
     },
     {
-      level: 'Senior High School',
-      degree: 'Accountancy, Business and Management (ABM) Strand',
-      institution: 'Your Senior High School Name',
-      period: '2018 - 2020',
+      level: 'Tertiary Education (Previous)',
+      degree: 'Bachelor of Science in Accountancy',
+      institution: 'Pampanga State University',
+      period: '2022 - 2024',
       description: [
-        'Focused on business and accounting fundamentals',
-        'Developed analytical and problem-solving skills',
-        'Participated in business-related activities and projects',
+        'Completed foundational accounting courses',
+        'Developed strong understanding of financial accounting principles',
+        'Gained experience in cost accounting and taxation',
+      ],
+    },
+    {
+      level: 'Senior High School',
+      degree: 'Humanities and Social Sciences (HUMSS) Strand',
+      institution: 'Pampanga High School',
+      period: '2020 - 2022',
+      description: [
+        'Focused on social sciences and humanities',
+        'Developed critical thinking and communication skills',
+        'Graduated with Honors',
       ],
     },
     {
       level: 'Secondary Education',
       degree: 'Junior High School',
-      institution: 'Your High School Name',
-      period: '2014 - 2018',
+      institution: 'Pampanga High School',
+      period: '2016 - 2020',
       description: [
         'Completed basic education with good academic standing',
         'Active in school activities and organizations',
@@ -40,8 +51,8 @@ const Experience = () => {
     {
       level: 'Primary Education',
       degree: 'Elementary',
-      institution: 'Your Elementary School Name',
-      period: '2008 - 2014',
+      institution: 'Camp Olivas Elementary School',
+      period: '2010 - 2016',
       description: [
         'Completed primary education with honors',
         'Developed basic literacy and numeracy skills',
@@ -52,16 +63,34 @@ const Experience = () => {
 
   const achievements = [
     {
-      title: 'Academic Excellence',
-      description: 'Consistently maintained good academic standing throughout college',
+      title: 'Lead Researcher',
+      period: '2025-2026',
+      description: 'Thesis: "ERP Absorptive Capacity on ERP Benefits: A Study on Employee Perspective Towards Enhancing Job Efficiency"',
     },
     {
-      title: 'Leadership',
-      description: 'Active participation in student organizations and activities',
+      title: 'Team Leader - Best Project Award',
+      period: '2023-2024',
+      description: 'Software Scheduling Platform development project',
     },
     {
-      title: 'Technical Skills',
-      description: 'Proficient in accounting software and information systems',
+      title: 'Team Leader',
+      period: '2023-2024',
+      description: 'Feasibility Study Project "Monkey Munchies"',
+    },
+    {
+      title: '2nd Year Representative',
+      period: '2023-2024',
+      description: 'College of Business Studies Student Council',
+    },
+    {
+      title: '2nd Year Representative',
+      period: '2023-2024',
+      description: 'Junior Philippine Institute of Accountants (JPIA)',
+    },
+    {
+      title: 'Graduated with Honors',
+      period: '2020-2022',
+      description: 'Senior High School',
     },
   ]
 
@@ -158,7 +187,7 @@ const Experience = () => {
           </span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}
@@ -170,7 +199,10 @@ const Experience = () => {
                 <div className="p-3 bg-gradient-to-br from-maroon-500 to-gold-500 rounded-xl">
                   <Award className="text-white w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-semibold text-white">{achievement.title}</h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">{achievement.title}</h3>
+                  <p className="text-gold-400 text-xs">{achievement.period}</p>
+                </div>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">{achievement.description}</p>
             </motion.div>
