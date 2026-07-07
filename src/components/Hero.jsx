@@ -75,7 +75,7 @@ const Hero = () => {
         >
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-maroon-500 via-maroon-600 to-gold-500 p-1 shadow-2xl">
             <img 
-              src="./profile.jpg" 
+              src="https://goodyboyie2-byte.github.io/resume-2/profile.jpg" 
               alt="Richard Budlong" 
               className="w-full h-full rounded-full object-cover"
             />
