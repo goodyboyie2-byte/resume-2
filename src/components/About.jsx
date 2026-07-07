@@ -21,8 +21,8 @@ const About = () => {
   const facts = [
     { icon: Globe, label: 'Location', value: 'San Fernando, Pampanga' },
     { icon: Zap, label: 'Education', value: 'BS in Accounting Information System' },
-    { icon: Code, label: 'Focus', value: 'Accounting & Information Systems' },
-    { icon: Heart, label: 'Passion', value: 'Data Analysis & Financial Management' },
+    { icon: Code, label: 'Focus', value: 'ERP Systems & Business Analytics' },
+    { icon: Heart, label: 'Interest', value: 'Software Development' },
   ]
 
   return (
@@ -52,18 +52,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I am a graduating student pursuing a Bachelor of Science in Accounting Information System. 
-              I am passionate about combining accounting principles with information technology to create 
-              efficient financial systems and data-driven solutions.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              My academic journey has equipped me with strong analytical skills, attention to detail, and 
-              a solid foundation in both accounting and information systems. I am eager to apply my knowledge 
-              in a professional setting and contribute to organizational success.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              I am detail-oriented, data-driven, and dependable - qualities that I believe are essential 
-              for success in the accounting and finance field.
+              I'm Chad, a BS in Accounting Information System student at Pampanga State University with a strong interest in ERP systems, business analytics, and software development. I enjoy building practical applications that solve real business problems while combining accounting knowledge with modern technology. My goal is to become a professional who bridges business processes and information systems.
             </p>
           </motion.div>
 

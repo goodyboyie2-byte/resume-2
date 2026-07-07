@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Linkedin, Mail, ArrowDown, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
+import profileImage from '../assets/profile.jpg'
 
 const Hero = () => {
   const floatingVariants = {
@@ -73,9 +74,11 @@ const Hero = () => {
           className="mb-12 relative"
         >
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-maroon-500 via-maroon-600 to-gold-500 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-maroon-900 flex items-center justify-center text-white text-6xl font-bold">
-              RB
-            </div>
+            <img 
+              src={profileImage} 
+              alt="Richard Budlong" 
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           <motion.div
             className="absolute -top-4 -right-4"

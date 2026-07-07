@@ -4,28 +4,34 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Accounting',
-      icon: '📊',
-      skills: ['Financial Accounting', 'Cost Accounting', 'Taxation', 'Auditing', 'Financial Reporting', 'Budgeting'],
+      title: 'Programming',
+      icon: '�',
+      skills: ['Java', 'JavaScript', 'Python', 'SQL'],
       color: 'from-maroon-500 to-gold-500',
     },
     {
-      title: 'Information Systems',
-      icon: '💻',
-      skills: ['Database Management', 'Accounting Software', 'Data Analysis', 'Spreadsheets', 'ERP Systems', 'Basic Programming'],
+      title: 'Web Development',
+      icon: '🌐',
+      skills: ['React', 'HTML', 'CSS', 'Tailwind CSS'],
       color: 'from-maroon-600 to-gold-600',
     },
     {
-      title: 'Technical Skills',
-      icon: '🛠️',
-      skills: ['Microsoft Excel', 'Google Sheets', 'PowerPoint', 'Word Processing', 'Data Entry', 'Report Generation'],
+      title: 'Database',
+      icon: '🗄️',
+      skills: ['MySQL', 'Firebase'],
       color: 'from-maroon-700 to-gold-700',
     },
     {
-      title: 'Soft Skills',
-      icon: '💡',
-      skills: ['Attention to Detail', 'Analytical Thinking', 'Time Management', 'Communication', 'Teamwork', 'Problem Solving'],
+      title: 'Accounting & Business',
+      icon: '�',
+      skills: ['ERP Concepts', 'Financial Accounting', 'Business Analysis'],
       color: 'from-maroon-800 to-gold-500',
+    },
+    {
+      title: 'Tools',
+      icon: '�️',
+      skills: ['Git', 'GitHub', 'VS Code', 'Figma'],
+      color: 'from-maroon-900 to-gold-600',
     },
   ]
 
@@ -68,7 +74,7 @@ const Skills = () => {
           </span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
