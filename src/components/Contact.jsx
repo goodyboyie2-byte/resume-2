@@ -30,14 +30,14 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Richard Budlong',
-      href: 'https://linkedin.com/in/richard-budlong',
+      href: 'https://www.linkedin.com/in/richard-budlong-361245416?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       color: 'from-maroon-600 to-gold-600',
     },
     {
       icon: Facebook,
       label: 'Facebook',
       value: 'Richard Budlong',
-      href: 'https://facebook.com/richard.budlong',
+      href: 'https://www.facebook.com/share/1EZoRAffQV/',
       color: 'from-maroon-700 to-gold-700',
     },
     {

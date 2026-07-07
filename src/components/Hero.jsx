@@ -139,7 +139,7 @@ const Hero = () => {
             Get In Touch
           </motion.a>
           <motion.a
-            href="#experience"
+            href="#works"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 rounded-full font-semibold border-2 border-gold-500 text-gold-400 hover:bg-gold-500/10 transition-colors"
@@ -157,9 +157,9 @@ const Hero = () => {
           className="flex justify-center space-x-8"
         >
           {[
-            { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-            { icon: Linkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-            { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+            { icon: Github, href: "https://github.com/goodyboyie2-byte", label: "GitHub" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/richard-budlong-361245416?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+            { icon: Mail, href: "mailto:richard.p.budlong@gmail.com", label: "Email" },
           ].map((social, index) => (
             <motion.a
               key={index}

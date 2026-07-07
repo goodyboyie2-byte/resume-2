@@ -4,34 +4,28 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming',
-      icon: '�',
-      skills: ['Java', 'JavaScript', 'Python', 'SQL'],
+      title: 'Accounting Principles & Software Application Use',
+      icon: '📊',
+      level: 'Basic',
       color: 'from-maroon-500 to-gold-500',
     },
     {
-      title: 'Web Development',
-      icon: '🌐',
-      skills: ['React', 'HTML', 'CSS', 'Tailwind CSS'],
+      title: 'Leadership & Organizational Skills',
+      icon: '�',
+      level: 'Basic',
       color: 'from-maroon-600 to-gold-600',
     },
     {
-      title: 'Database',
-      icon: '🗄️',
-      skills: ['MySQL', 'Firebase'],
+      title: 'Representation & Communication',
+      icon: '💬',
+      level: 'Basic',
       color: 'from-maroon-700 to-gold-700',
     },
     {
-      title: 'Accounting & Business',
-      icon: '�',
-      skills: ['ERP Concepts', 'Financial Accounting', 'Business Analysis'],
+      title: 'Document Management & Filing',
+      icon: '📁',
+      level: 'Basic',
       color: 'from-maroon-800 to-gold-500',
-    },
-    {
-      title: 'Tools',
-      icon: '�️',
-      skills: ['Git', 'GitHub', 'VS Code', 'Figma'],
-      color: 'from-maroon-900 to-gold-600',
     },
   ]
 
@@ -70,11 +64,11 @@ const Skills = () => {
           className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center"
         >
           <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-            Skills & Technologies
+            Skills & Competencies
           </span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
@@ -86,19 +80,10 @@ const Skills = () => {
                 <div className={`p-3 bg-gradient-to-br ${category.color} rounded-xl`}>
                   <span className="text-2xl">{category.icon}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-white">{category.title}</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, idx) => (
-                  <motion.span
-                    key={idx}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-white/10 text-gray-300 px-3 py-1.5 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors cursor-default"
-                  >
-                    {skill}
-                  </motion.span>
-                ))}
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-white">{category.title}</h3>
+                  <p className="text-gold-400 text-sm">{category.level}</p>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -25,6 +25,11 @@ const About = () => {
     { icon: Heart, label: 'Interest', value: 'Software Development' },
   ]
 
+  const languages = [
+    { name: 'English', level: 'Fluent' },
+    { name: 'Filipino/Tagalog', level: 'Native' },
+  ]
+
   return (
     <section id="about" className="py-20 bg-maroon-900 relative overflow-hidden">
       {/* Background decoration */}
@@ -49,7 +54,7 @@ const About = () => {
           </span>
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
               I'm Chad, a BS in Accounting Information System student at Pampanga State University with a strong interest in ERP systems, business analytics, and software development. I enjoy building practical applications that solve real business problems while combining accounting knowledge with modern technology. My goal is to become a professional who bridges business processes and information systems.
@@ -74,6 +79,66 @@ const About = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* Graduation Photos */}
+        <motion.div variants={itemVariants} className="mb-12">
+          <h3 className="text-2xl font-semibold text-white mb-6 text-center">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+              Graduation Moments
+            </span>
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative group overflow-hidden rounded-2xl shadow-2xl"
+            >
+              <img
+                src="https://goodyboyie2-byte.github.io/resume-2/graduation1.jpg"
+                alt="Graduation Photo 1"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=Graduation+Photo+1'; }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-white font-semibold">Graduation Day</p>
+              </div>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative group overflow-hidden rounded-2xl shadow-2xl"
+            >
+              <img
+                src="https://goodyboyie2-byte.github.io/resume-2/graduation2.jpg"
+                alt="Graduation Photo 2"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=Graduation+Photo+2'; }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-white font-semibold">Achievement Celebration</p>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Languages Section */}
+        <motion.div variants={itemVariants}>
+          <h3 className="text-2xl font-semibold text-white mb-6 text-center">
+            <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
+              Languages
+            </span>
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            {languages.map((lang, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-6 text-center hover:border-gold-500/50 transition-all duration-300"
+              >
+                <p className="text-gold-400 font-semibold text-lg mb-2">{lang.name}</p>
+                <p className="text-gray-400 text-sm">{lang.level}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   )

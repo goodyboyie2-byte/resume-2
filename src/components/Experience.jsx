@@ -102,7 +102,7 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="py-20 bg-maroon-900 relative overflow-hidden">
+    <section id="academics" className="py-20 bg-maroon-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-maroon-500/10 rounded-full filter blur-3xl" />
@@ -121,7 +121,7 @@ const Experience = () => {
           className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center"
         >
           <span className="bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent">
-            Academic Background
+            Academics
           </span>
         </motion.h2>
 
