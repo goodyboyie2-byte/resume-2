@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Linkedin, Mail, ArrowDown, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
+import profileImage from '/profile.jpg?url'
 
 const Hero = () => {
   const floatingVariants = {
@@ -74,7 +75,7 @@ const Hero = () => {
         >
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-maroon-500 via-maroon-600 to-gold-500 p-1 shadow-2xl">
             <img 
-              src="/resume-2/profile.jpg" 
+              src="./profile.jpg" 
               alt="Richard Budlong" 
               className="w-full h-full rounded-full object-cover"
             />
